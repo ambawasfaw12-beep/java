@@ -5,7 +5,7 @@ public class MinMax {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        double average;
+     //   double average;
 
         int[] arrays = new int[3];
 
@@ -15,10 +15,10 @@ public class MinMax {
         }
 
         System.out.println("average of number you intered");
-        for (int array : arrays) {
-            average = (array + array + array) / 3;
-        }
-
+        // for (int array : arrays) {
+        //     average = (array + array + array) / 3;
+        // }
+input.close();
        // System.out.println(average);
     }
 }
