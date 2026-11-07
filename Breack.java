@@ -26,6 +26,11 @@ public class Breack {
 class ContinueMethod{
      
     public  void continuefun(int [] data){
-
+     for (int i : data) {
+        if(i == 2){
+            continue;
+        }
+        System.out.println(i);
+     }
     }
 }
