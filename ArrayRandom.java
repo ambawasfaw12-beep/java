@@ -9,7 +9,7 @@ public class ArrayRandom {
         }
 
         for (int i : array) {
-            System.out.println(" " + i + " ");
+            System.out.print(" " + i + " ");
         }
     }
 }
