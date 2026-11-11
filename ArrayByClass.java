@@ -18,7 +18,7 @@ public class ArrayByClass {
         for (int i = 0; i < person.length; i++) {
             System.out.print("Enter age: ");
             int age = scanner.nextInt();
-            scanner.nextLine(); // Consume the newline left-over by nextInt()
+            scanner.nextLine();
             
             System.out.print("Enter name: ");
             String name = scanner.nextLine();
