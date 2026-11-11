@@ -10,7 +10,8 @@ public class Circles {
     }
 
     public double getArae() {
-        double arae;
+        double arae = 0;
+        System.out.println(arae);
         return arae = Math.PI * Math.pow(radius, 2);
     }
 
