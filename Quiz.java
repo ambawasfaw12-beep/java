@@ -19,32 +19,34 @@ public class Quiz {
     }
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
+        int score = 0;
 
-        Quiz quiz1 = new Quiz("what is the siuni of force?", "force", "distance", "newton", "gravity", "c");
-        Quiz quiz2 = new Quiz("what is the siuni of force?", "force", "distance", "newton", "gravity", "d");
+        Quiz quiz1 = new Quiz("What is the SI unit of force?", "force", "distance", "newton", "gravity", "c");
+        Quiz quiz2 = new Quiz("What file extension does a compiled Java bytecode file have?", ".java", ".cpp", ".txt", ".class", "d");
 
-        Quiz[] exam = new Quiz[2];
-        exam[0] = quiz1;
-        exam[1] = quiz2;
+        Quiz[] exam = {quiz1, quiz2}; // Clean array initializer syntax from your slides!
 
         for (Quiz quiz : exam) {
-            String answer = null;
-            System.out.println(quiz.question);
-            System.out.println("A " + quiz.answerA);
-            System.out.println("B " + quiz.answerB);
-            System.out.println("C " + quiz.answerC);
-            System.out.println("D " + quiz.answerD); 
-            answer = scanner.nextLine();
+            System.out.println("\n" + quiz.question);
+            System.out.println("A. " + quiz.answerA);
+            System.out.println("B. " + quiz.answerB);
+            System.out.println("C. " + quiz.answerC);
+            System.out.println("D. " + quiz.answerD); 
+            
+            System.out.print("Your answer: ");
+            String answer = scanner.nextLine();
 
-            if (answer.equals(quiz.correctAnswer)) {
-                System.out.println("Correct you got the answer");
+            if (answer.equalsIgnoreCase(quiz.correctAnswer)) {
+                System.out.println("Correct! You got the answer.");
+                score++;
             } else {
-                System.out.println("try again");
+                System.out.println("Incorrect. The correct answer was option " + quiz.correctAnswer.toUpperCase() + ".");
             }
-
         }
+
+        System.out.println("\n--- Quiz Finished ---");
+        System.out.println("Your final score: " + score + " out of " + exam.length);
 
         scanner.close();
     }
