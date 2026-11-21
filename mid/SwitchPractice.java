@@ -1,3 +1,4 @@
+package mid;
 public class SwitchPractice {
     public static void main(String[] args) {
         char deep = 'e';

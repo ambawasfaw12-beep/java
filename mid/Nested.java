@@ -1,3 +1,4 @@
+package mid;
 public class Nested {
 
     int age;

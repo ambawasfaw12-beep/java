@@ -1,3 +1,4 @@
+package mid;
 import java.util.StringTokenizer;
 
 public class Token {

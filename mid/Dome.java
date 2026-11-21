@@ -1,3 +1,4 @@
+package mid;
 public class Dome {
     public static void main(String[] args) {
         int x = 3;

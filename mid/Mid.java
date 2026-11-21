@@ -1,3 +1,4 @@
+package mid;
 public class Mid {
     private static int n = 4;
 

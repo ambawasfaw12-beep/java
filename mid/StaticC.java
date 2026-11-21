@@ -1,3 +1,4 @@
+package mid;
 // public class StaticC {
 
 //     private String name;

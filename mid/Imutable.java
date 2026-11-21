@@ -1,3 +1,4 @@
+package mid;
 public class Imutable {
 
     public static void main(String[] args) {

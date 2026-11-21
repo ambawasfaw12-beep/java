@@ -1,3 +1,4 @@
+package mid;
 class Vehicles {
     protected int speed; // protected = visible to subclass
 
